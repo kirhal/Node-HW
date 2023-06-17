@@ -1,0 +1,20 @@
+{
+  "name": "node-hw",
+  "version": "1.0.0",
+  "description": "Node project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "engines": {
+    "npm": "9.6.4",
+    "node": "v18.12.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.com/kirhal/Node-HW"
+  },
+  "author": "kirhal",
+  "license": "ISC"
+}
