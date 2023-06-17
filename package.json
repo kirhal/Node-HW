@@ -16,5 +16,8 @@
     "url": "https://git.com/kirhal/Node-HW"
   },
   "author": "kirhal",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }
