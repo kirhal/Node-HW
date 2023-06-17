@@ -21,3 +21,5 @@ function removeContact(contactId) {
 function addContact(name, email, phone) {
   // ...твій код. Повертає об'єкт доданого контакту.
 }
+
+module.exports = { listContacts, getContactById, removeContact, addContact };
