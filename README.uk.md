@@ -3,8 +3,8 @@
 <h2>Homework #1</h2>
 
 <ul>
-<li>Read all - https://ibb.co/pf0n5mV</li>
-<li>Get by id - https://ibb.co/HntP79F</li>
-<li>Add new - https://ibb.co/W2Ktnkv</li>
-<li>Delete contact - https://ibb.co/d77CWrN</li>
+<li>Read all - <a>https://ibb.co/pf0n5mV</a></li>
+<li>Get by id - <a>https://ibb.co/HntP79F</a></li>
+<li>Add new - <a>https://ibb.co/W2Ktnkv</a></li>
+<li>Delete contact - <a>https://ibb.co/d77CWrN</a></li>
 </ul>
