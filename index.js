@@ -5,6 +5,8 @@ const {
   addContact,
 } = require('./contacts.js');
 
+const { program } = require('commander');
+
 const invokeAction = async ({ action, id, name, email, phone }) => {
   switch (action) {
     case 'read':
@@ -25,17 +27,14 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
   }
 };
 
-// invokeAction({ action: 'read' });
-// invokeAction({ action: 'id', id: 'vza2RIzNGIwutCVCs4mCL' });
-// invokeAction({ action: 'delete', id: 'vza2RIzNGIwutCVCs4mCL' });
-// invokeAction({
-//   action: 'add',
-//   name: 'Pupu',
-//   email: 'pupu@nail.com',
-//   phone: '555',
-// });
-const indexOf = process.argv.indexOf('--action');
-if (indexOf !== -1) {
-  const action = process.argv[indexOf + 1];
-  invokeAction({ action });
-}
+program
+  .option('--a, --action, <type>')
+  .option('--i, --id, <type>')
+  .option('--n, --name, <type>')
+  .option('--e, --email, <type>')
+  .option('--p, --phone, <type>');
+
+program.parse(process.argv);
+const options = program.opts();
+
+invokeAction(options);
