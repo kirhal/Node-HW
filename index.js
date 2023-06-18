@@ -21,11 +21,11 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
       return console.log(addedContact);
 
     default:
-      break;
+      console.log('Unknown action');
   }
 };
 
-// invokeAction({ action: "read" });
+// invokeAction({ action: 'read' });
 // invokeAction({ action: 'id', id: 'vza2RIzNGIwutCVCs4mCL' });
 // invokeAction({ action: 'delete', id: 'vza2RIzNGIwutCVCs4mCL' });
 // invokeAction({
@@ -34,3 +34,8 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
 //   email: 'pupu@nail.com',
 //   phone: '555',
 // });
+const indexOf = process.argv.indexOf('--action');
+if (indexOf !== -1) {
+  const action = process.argv[indexOf + 1];
+  invokeAction({ action });
+}
